@@ -1,5 +1,7 @@
 # DiFUSE: Distributed FUSE
 
+### Authors: Brian Gavin and [Ngan Nguyen](http://ngan-nguyen.xyz/)
+
 Distributed filesystem written for network programming class.
 
 Centralized P2P architecture.
@@ -17,10 +19,12 @@ Custom protocol implemented.
 
 ## Spin up the Bootstrap node
 
-The bootstrap node manages entering and exiting nodes into the cluster.
+The bootstrap node manages the entrance and exit of nodes in the cluster.
 
 `./bootstrap.py [--threads THREADS]`
 
 ## Join the cluster with nodes 
+
+The nodes are what manages the mounted filesystem and all the communication.
 
 `./node_main.py <bootstrap_ip> <mount_directory>`
